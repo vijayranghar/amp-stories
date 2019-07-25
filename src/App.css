@@ -119,16 +119,12 @@
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 700;
-  /* left: 55px; */
   letter-spacing: 4.5px;
   line-height: 18.45px;
-  /* position: absolute; */
   text-align: left;
   text-transform: none;
   margin-bottom: 8px;
-  /* top: 63px; */
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
-  /* width: 202px; */
+  margin-top: 8px;
 }
 
 .subway-wrapper .text-3 {
@@ -137,15 +133,8 @@
   font-family: "Open Sans";
   font-size: 10px;
   font-weight: 400;
-  /* left: 61px; */
   letter-spacing: 0px;
   line-height: 14.3px;
-  /* position: absolute; */
-  /* text-align: left; */
-  /* text-transform: none; */
-  /* top: 140px; */
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
-  /* width: 214px; */
   padding: 5px 10px;
 }
 
@@ -155,32 +144,72 @@
   font-family: "Open Sans";
   font-size: 10px;
   font-weight: 400;
-  /* left: 62px; */
   letter-spacing: 0px;
   line-height: 14.3px;
-  /* position: absolute; */
-  /* text-align: left; */
-  /* text-transform: none; */
-  /* top: 186px; */
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
-  /* width: 214px; */
-}
-.para {
-  background-color: rgba(0, 0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-family: "Euphoria Script";
-  font-size: 14px;
-  font-weight: 400;
-  left: 52px;
-  letter-spacing: 0px;
-  line-height: 20.02px;
-  /* position: absolute; */
-  text-align: left;
-  /* text-transform: none; */
-  top: 37px;
-  /* transform: matrix(1, 0, 0, 1, 0, 0); */
-  /* width: 214px; */
+  padding: 5px 10px;
 }
 p {
   color: #fff;
+}
+
+
+/* Indian Cuisine */
+
+.indian-cuisine-wrapper {
+  height: 100%;
+}
+.indian-cuisine-wrapper .text-container {
+  background: rgba(45, 200, 121, 0);
+  border: 6px solid rgb(0, 0, 0);
+  color: rgb(51, 51, 51);
+  height: 508px;
+  left: calc(50% - 135px);
+  position: absolute;
+  top: 0px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 270px;
+  top: calc(50% - 254px);
+  text-align: center;
+  padding: 22px;
+}
+
+.indian-cuisine-wrapper .text-1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: Satisfy;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0px;
+  letter-spacing: 0em;
+  line-height: 1.43em;
+  text-align: center;
+}
+.indian-cuisine-wrapper .text-2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Hammersmith One";
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 47.5px;
+  text-align: center;
+}
+.indian-cuisine-wrapper .text-3 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: Mogra;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 0.95em;
+  margin: 6px 0 8px 0;
+}
+.indian-cuisine-wrapper .text-4 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: "Hammersmith One";
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 14.25px;
 }

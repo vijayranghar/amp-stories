@@ -8,7 +8,8 @@ class Subway extends Component {
       left: '0.00%',
       objectPosition: '50% 50%',
       top: '0.00%',
-      width: '100.00%'
+      width: '100.00%',
+      objectFit: 'cover',
     }
     return (
       <div className="subway-wrapper">
@@ -16,11 +17,11 @@ class Subway extends Component {
           width="720" 
           height="1280" 
           src="https://storage.googleapis.com/makestories-202705.appspot.com/WXCDzGhx27aZ0vzcOpQdjcdDJ873/10.jpg" 
-          class="page-background" 
+          className="page-background" 
           style={style} alt="fashion bg" />
         <div className="text-container">
           <p className="text-1">Travel like a local</p>
-          <p class="text-2">
+          <p className="text-2">
             SURVIVING
             <br/>THE <br/>SUBWAYS
           </p>
