@@ -27,10 +27,10 @@ class StoriesList extends Component {
       name: 'Classics'
     }]
 
-    const renderStories = stories.map((item, index) => (
-      <div className="story-image" key={index} onClick={(e) => this.handleClick(index+1)}>
+    const renderStories = stories.map(({ imageUrl, name }, index) => (
+      <div className="story-image" key={index} onClick={(e) => this.handleClick(name)}>
         <span className="fa fa-plus img-delete-btn add-template"/>
-        <img src={item} alt="story"/>
+        <img src={imageUrl} alt="story"/>
       </div>
     ))
     return (
