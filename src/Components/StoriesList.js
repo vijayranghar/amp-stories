@@ -11,10 +11,11 @@ class StoriesList extends Component {
     this.props.selectStory(storyId)
   }
   render () {
-    const stories = [{
-      imageUrl: image1Url,
-      name: 'Fashion',
-    },
+    const stories = [
+    //   {
+    //   imageUrl: image1Url,
+    //   name: 'Fashion',
+    // },
     {
       imageUrl: image2Url,
       name: 'Subway',
@@ -23,10 +24,10 @@ class StoriesList extends Component {
       imageUrl: image3Url,
       name: 'IndianCuisine'
     },
-    {
-      imageUrl: image4Url,
-      name: 'Classics'
-    },
+    // {
+    //   imageUrl: image4Url,
+    //   name: 'Classics'
+    // },
     {
       imageUrl: image5Url,
       name: 'ItalianCookbook'
