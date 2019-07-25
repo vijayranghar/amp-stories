@@ -5,6 +5,7 @@ import image1Url from '../assets/image1.jpeg'
 import image2Url from '../assets/image2.jpeg'
 import image3Url from '../assets/image3.jpeg'
 import image4Url from '../assets/image4.jpeg'
+import image5Url from '../assets/image5.jpeg'
 class StoriesList extends Component {
   handleClick = (storyId) => {
     this.props.selectStory(storyId)
@@ -25,6 +26,10 @@ class StoriesList extends Component {
     {
       imageUrl: image4Url,
       name: 'Classics'
+    },
+    {
+      imageUrl: image5Url,
+      name: 'ItalianCookbook'
     }]
 
     const renderStories = stories.map(({ imageUrl, name }, index) => (

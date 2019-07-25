@@ -11,7 +11,7 @@ class IndianCuisine extends Component {
       objectFit: 'cover',
     }
     return (
-      <div className="indian-cuisine-wrapper">
+      <div className="indian-cuisine-wrapper story">
         <img 
           width="720" 
           height="1280" 

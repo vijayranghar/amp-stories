@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class ItalinaCookbook extends Component {
   render () {
     return (
-      <div className="italiana-cookbook-wrapper">
+      <div className="italiana-cookbook-wrapper story">
         <img 
           className="illhsgwbfv element ui-draggable-handle" 
           width="720" 

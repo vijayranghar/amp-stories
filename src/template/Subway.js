@@ -12,7 +12,7 @@ class Subway extends Component {
       objectFit: 'cover',
     }
     return (
-      <div className="subway-wrapper">
+      <div className="subway-wrapper story">
         <img 
           width="720" 
           height="1280" 

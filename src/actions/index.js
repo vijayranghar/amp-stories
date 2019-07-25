@@ -1,7 +1,7 @@
 export const SELECT_STORY = 'SELECT_STORY'
 
 
-export const selectStory = (id) => ({
+export const selectStory = (selectedStoryID) => ({
   type: SELECT_STORY,
-  id,
+  selectedStoryID,
 })
