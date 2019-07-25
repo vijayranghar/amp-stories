@@ -183,6 +183,7 @@ p {
   letter-spacing: 0em;
   line-height: 1.43em;
   text-align: center;
+  margin-bottom: 8px;
 }
 .indian-cuisine-wrapper .text-2 {
   background-color: rgba(0, 0, 0, 0);
@@ -212,4 +213,74 @@ p {
   font-weight: 400;
   letter-spacing: 0px;
   line-height: 14.25px;
+}
+
+/* Italiana cookbook wrapper */
+.italiana-cookbook-wrapper {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 51, 51);
+  height: 672.141px;
+  left: -331.992px;
+  position: absolute;
+  top: -32.0703px;
+  /* transform: matrix(1, 0, 0, 1, 0, 0); */
+  width: 968.122px;
+  text-align: center;
+}
+.italiana-cookbook-wrapper img {
+  filter: none;
+  object-fit: fill;
+  /* -webkit-mask-image: none;
+  -webkit-mask-size: auto;
+  -webkit-mask-repeat: repeat; */
+  height: 100%;
+  width: 100%;
+}
+.italiana-cookbook-wrapper .text-container {
+  background: rgb(255, 255, 255);
+  border: 5px solid rgb(0, 0, 0);
+  color: rgb(51, 51, 51);
+  height: 266.969px;
+  left: 49.9609px;
+  position: fixed;
+  top: 180.957px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  width: 266.969px;
+  padding: 22px 22px 30px;
+}
+.italiana-cookbook-wrapper .text-1 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 51, 51);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  left: 58.0078px;
+  letter-spacing: 4.5px;
+  line-height: 26.4px;
+  text-transform: uppercase;
+}
+.italiana-cookbook-wrapper .text-2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 51, 51);
+  font-family: "Museo Sans";
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 50.05px;
+  text-transform: uppercase;
+}
+.italiana-cookbook-wrapper .text-3 {
+  text-transform: uppercase;
+  color: rgb(51, 51, 51);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 21.45px;
+}
+.italiana-cookbook-wrapper .divider {
+  background: rgb(0, 0, 0);
+  border: 1px solid rgb(158, 158, 158);
+  color: rgb(51, 51, 51);
+  height: 5px;
+  margin: 5px auto 13px auto;
+  width: 150px;
 }
