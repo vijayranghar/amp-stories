@@ -5,6 +5,16 @@ class TextEditor extends Component {
     super()
     this.editorControls = [
       {
+        property: 'undo',
+        icon: 'fa-undo',
+        args: ''
+      },
+      {
+        property: 'redo',
+        icon: 'fa-repeat',
+        args: ''
+      },
+      {
         property: 'italic',
         icon: 'fa-italic',
         args: ''
@@ -13,6 +23,35 @@ class TextEditor extends Component {
         property: 'bold',
         icon: 'fa-bold',
         args: ''
+      },
+      {
+        property: 'underline',
+        icon: 'fa-underline',
+        args: ''
+      },
+      {
+        property: 'justifyCenter',
+        icon: 'fa-align-center',
+        args: '',
+        desc: 'Centers the selection or insertion point.',
+      },
+      {
+        property: 'justifyFull',
+        icon: 'fa-align-justify',
+        args: '',
+        desc: 'Justifies the selection or insertion point.',
+      },
+      {
+        property: 'justifyLeft',
+        icon: 'fa-align-left',
+        args: '',
+        desc: 'Justifies the selection or insertion point to the left.',
+      },
+      {
+        property: 'justifyRight',
+        icon: 'fa-align-right',
+        args: '',
+        desc: 'Right-justifies the selection or the insertion point.'
       },
       // {
       //   label: 'Heading',

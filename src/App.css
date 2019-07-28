@@ -362,8 +362,22 @@ p {
   transition: all 0.5s ease;
   border: 1px solid #d8d8d8;
   padding: 5px 10px;
+  display: flex;
 } 
 .text-editor button {
-  border-radius: 5px;
   padding: 5px;
+  border-radius: 6px;
+  margin-right: 5px;
+  background: #fff;
+  border: none;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.text-editor .fa {
+  font-size: 15px;
 }
