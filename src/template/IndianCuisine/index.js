@@ -1,4 +1,5 @@
 import React, { Component } from 'react' 
+import TextEditor from '../../Components/TextEditor'
 import Text1 from './Text1'
 import Text2 from './Text2'
 import Text3 from './Text3'
@@ -29,6 +30,7 @@ class IndianCuisine extends Component {
           <Text3 />
           <Text4 />
         </div>
+        <TextEditor />
       </div>
     )
   }

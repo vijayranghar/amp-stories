@@ -3,12 +3,7 @@ import ContentEditable from "react-contenteditable"
 import { connect } from 'react-redux'
 import { editText } from '../../actions'
 class Text1 extends Component {
-  componentWillMount() {
-
-  }
   handleChange = evt => {
-    // this.setState({ html: evt.target.value });
-    console.log("val>>", evt.target.value)
     this.props.editText({template: 'indianCuisine', field: 'text1', value: evt.target.value})
   }
 
@@ -30,8 +25,8 @@ class Text1 extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  text: state.template.indianCuisine.text1,
+const mapStateToProps = ({template}) => ({
+  text: template.indianCuisine.text1,
 })
 
 

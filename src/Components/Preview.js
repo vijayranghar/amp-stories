@@ -3,6 +3,7 @@ import Subway from '../template/Subway'
 import IndianCuisine from '../template/IndianCuisine'
 import ItalianCookbook from '../template/ItalianCookbook'
 import { connect } from 'react-redux'
+import TextEditor from '../Components/TextEditor'
 
 class Preview extends Component {
   constructor(props) {
@@ -46,15 +47,18 @@ class Preview extends Component {
     const style = selectedStory >= 1 ? { transform: `translateX(-${selectedStory * 360}px)` } : {}
     return (
       <div className="preview-wrapper">
-        <div className="preview">
-          <div className="layer-wrapper" style={style}>
-            {renderStories}
-            {renderInitialMessage}
+        <TextEditor />
+        <div className="preview-window">
+          <div className="preview">
+            <div className="layer-wrapper" style={style}>
+              {renderStories}
+              {renderInitialMessage}
+            </div>
           </div>
+          <ul onClick={this.handleClick} className="indicators">
+            {renderIndicators}
+          </ul>  
         </div>
-        <ul onClick={this.handleClick} className="indicators">
-          {renderIndicators}
-        </ul>  
       </div>
     )
   }

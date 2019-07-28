@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #eff2f7;
+}
 pre {
   white-space: pre-wrap;       /* Since CSS 2.1 */
   white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -11,7 +14,7 @@ pre {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 .App {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
   display: flex;
 }
@@ -30,6 +33,10 @@ pre {
   position: relative;
   max-width: 180px;
   margin: 0 auto;
+}
+.story-image.disabled {
+  pointer-events: none;
+  opacity: .4;
 }
 .story-image .fa {
   position: absolute;
@@ -56,6 +63,10 @@ pre {
 
 /* Preview page */
 .preview-wrapper {
+  width: 100%;
+  position: relative;
+}
+.preview-window {
   width: 360px;
   position: fixed;
   left: 50%;
@@ -340,4 +351,19 @@ p {
   height: 5px;
   margin: 5px auto 13px auto;
   width: 150px;
+}
+
+/* Text Editor */
+.text-editor {
+  position: absolute;
+  background: #fff;
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+  border: 1px solid #d8d8d8;
+  padding: 5px 10px;
+} 
+.text-editor button {
+  border-radius: 5px;
+  padding: 5px;
 }
