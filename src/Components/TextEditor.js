@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-
+import { SketchPicker } from 'react-color';
 class TextEditor extends Component {
   constructor() {
     super()
+    this.state = {
+      showColorPicker: false,
+    }
     this.editorControls = [
       {
         property: 'undo',
@@ -30,6 +33,11 @@ class TextEditor extends Component {
         args: ''
       },
       {
+        property: 'foreColor',
+        icon: 'fa-eyedropper',
+        args: ''
+      },
+      {
         property: 'justifyCenter',
         icon: 'fa-align-center',
         args: '',
@@ -53,6 +61,13 @@ class TextEditor extends Component {
         args: '',
         desc: 'Right-justifies the selection or the insertion point.'
       },
+      {
+        property: 'justifyRight',
+        icon: 'fa-align-right',
+        args: '',
+        desc: 'Right-justifies the selection or the insertion point.'
+      },
+      
       // {
       //   label: 'Heading',
       //   property: 'heading',
@@ -65,12 +80,45 @@ class TextEditor extends Component {
     e.preventDefault() //Avoids loosing focus from the editable content
     document.execCommand(cmd, showDefaultUI, arg)
   }
+  showColorPicker = () => {
+    this.setState({
+      showColorPicker: true
+    })
+  }
+  hideColorPicker = () => {
+    this.setState({
+      showColorPicker: false
+    })
+  }
+  handleColorPickerChange = (color) => {
+    console.log(color)
+    const { rgb:{r,g,b,a} } = color 
+    document.execCommand('styleWithCSS', false, true);
+    document.execCommand('foreColor', false, `rgba(${r},${g},${b},${a})`);
+  }
   render () {
-    const renderControls = this.editorControls.map(({ icon, label,property }) => (
-      <button onMouseDown={(e) => this.handleMouseDown(e, property, false)}>
-        <i className={`fa ${icon}`} aria-hidden="true"></i>
-      </button>
-    ))
+    const { showColorPicker } = this.state 
+    const renderColorPicker = showColorPicker ? (
+      <div className="color-picker">
+        <SketchPicker onChangeComplete={this.hideColorPicker} onChange={this.handleColorPickerChange} /> 
+      </div>
+    )
+    : null
+    const renderControls = this.editorControls.map(({ icon, property }, index) => {
+      if(property==='foreColor') {
+        return (
+          <button onMouseDown={this.showColorPicker} key={index}>
+            <i className={`fa ${icon}`} aria-hidden="true"></i>
+            {renderColorPicker}
+          </button>
+        )
+      }
+      return (
+        <button key={index} onMouseDown={(e) => this.handleMouseDown(e, property, false)}>
+          <i className={`fa ${icon}`} aria-hidden="true"></i>
+        </button>
+      )
+    })
 
     return (
       <div className="text-editor">
@@ -87,6 +135,7 @@ class TextEditor extends Component {
         {/* <button onMouseDown={(e) => this.handleMouseDown()}>
           Underline
         </button> */}
+        {/* <SketchPicker /> */}
       </div>
     )
   }

@@ -376,8 +376,12 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: relative;
 }
-
+.text-editor .color-picker {
+  position: absolute;
+  top: 35px;
+}
 .text-editor .fa {
   font-size: 15px;
 }
