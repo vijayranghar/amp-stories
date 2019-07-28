@@ -1,6 +1,5 @@
 import React, { Component } from 'react' 
 
-
 class Subway extends Component {
   render () {
     const style = {

@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import ContentEditable from "react-contenteditable"
 import { connect } from 'react-redux'
-
+import { editText } from '../../actions'
 class Text1 extends Component {
   componentWillMount() {
 
   }
   handleChange = evt => {
-    this.setState({ html: evt.target.value });
+    // this.setState({ html: evt.target.value });
+    console.log("val>>", evt.target.value)
+    this.props.editText({template: 'indianCuisine', field: 'text1', value: evt.target.value})
   }
+
   toggleEditable = () => {
     this.setState({ editable: !this.state.editable })
   }
@@ -27,13 +30,9 @@ class Text1 extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  console.log("state", state.template.indianCuisine.text1)
-  return { text: state.template.indianCuisine.text1 }
-}
+const mapStateToProps = (state) => ({
+  text: state.template.indianCuisine.text1,
+})
 
-export default connect(mapStateToProps,null)(Text1)
 
-//<p className="text-1">
-//      Polabooks Press
-//    </p>
+export default connect(mapStateToProps, { editText })(Text1)

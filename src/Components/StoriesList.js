@@ -7,6 +7,12 @@ import image3Url from '../assets/image3.jpeg'
 //import image4Url from '../assets/image4.jpeg'
 import image5Url from '../assets/image5.jpeg'
 class StoriesList extends Component {
+
+  //remove this
+  componentDidMount() {
+    this.props.selectStory("IndianCuisine")
+  }
+
   handleClick = (storyId) => {
     this.props.selectStory(storyId)
   }

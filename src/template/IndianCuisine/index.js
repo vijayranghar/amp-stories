@@ -1,6 +1,8 @@
 import React, { Component } from 'react' 
 import Text1 from './Text1'
-
+import Text2 from './Text2'
+import Text3 from './Text3'
+import Text4 from './Text4'
 class IndianCuisine extends Component {
   render () {
     const imageStyle = {
@@ -23,15 +25,9 @@ class IndianCuisine extends Component {
         />
         <div className="text-container">
           <Text1 />
-          <p className="text-2">
-            THE CUISINE: INDIAN
-          </p>
-          <p className="text-3">
-            IMPORTANT TIPS AND MOUTH-WATERING RECIPES
-          </p>
-          <p className="text-4">
-            RUFUS PALMERSTON
-          </p>
+          <Text2 />
+          <Text3 />
+          <Text4 />
         </div>
       </div>
     )

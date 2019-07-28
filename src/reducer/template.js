@@ -1,4 +1,4 @@
-//import React from 'react'
+import { EDIT_TEXT } from '../actions'
 
 // const indianCuisineTextOne = (<p className="text-1">
 const indianCuisine = {
@@ -13,5 +13,11 @@ let initialState = {
 }
 
 export default (state=initialState, action) => {
-  return state
+  const { field, value, template } = action.payload || {}
+  switch(action.type) {
+    case EDIT_TEXT:
+      return {...state, [template]: { ...state[template], [field]: value } }
+    default:
+        return state
+  }
 }
