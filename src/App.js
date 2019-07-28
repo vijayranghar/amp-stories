@@ -5,7 +5,7 @@ import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import logger from 'redux-logger'
 import reducer from './reducer'
-import Test from './Test'
+// import Test from './Test'
 import './App.css'
 
 function App() {
@@ -14,9 +14,9 @@ function App() {
   return (
     <Provider store={store}>
       <div className="App">
-        {/* <StoriesList />
-        <Preview /> */}
-        <Test/>
+        <StoriesList />
+        <Preview />
+        {/* <Test/> */}
       </div>
     </Provider>
   );

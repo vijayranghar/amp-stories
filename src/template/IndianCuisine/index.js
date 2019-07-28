@@ -1,4 +1,5 @@
 import React, { Component } from 'react' 
+import Text1 from './Text1'
 
 class IndianCuisine extends Component {
   render () {
@@ -21,9 +22,7 @@ class IndianCuisine extends Component {
           style={imageStyle} alt="indian cuisine" 
         />
         <div className="text-container">
-          <p className="text-1">
-            Polabooks Press
-          </p>
+          <Text1 />
           <p className="text-2">
             THE CUISINE: INDIAN
           </p>

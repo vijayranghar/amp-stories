@@ -10,7 +10,7 @@ export default (state=initialState, action) => {
   switch(action.type) {
     case SELECT_STORY:
       return { ...state, selectedStoryID, storiesList:[...state.storiesList, selectedStoryID] }
-     default:
-       return state 
+    default:
+      return state 
   }
 }

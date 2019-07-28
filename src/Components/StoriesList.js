@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { selectStory } from '../actions'
-import image1Url from '../assets/image1.jpeg'
+//import image1Url from '../assets/image1.jpeg'
 import image2Url from '../assets/image2.jpeg'
 import image3Url from '../assets/image3.jpeg'
-import image4Url from '../assets/image4.jpeg'
+//import image4Url from '../assets/image4.jpeg'
 import image5Url from '../assets/image5.jpeg'
 class StoriesList extends Component {
   handleClick = (storyId) => {
